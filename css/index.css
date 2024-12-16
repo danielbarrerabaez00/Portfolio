@@ -495,13 +495,14 @@ body{
     flex-direction: row;
 }
 .about-img img{
-    width: 100%;
+    /* width: 100%; */
+    text-align: center;
     height:380px;
     padding: 30px;
     border-radius: 40px;
 }
 .about-img {
-    width: 550px;
+    /* width: 550px; */
     height:auto;
     padding: 30px;
     padding-top: 10px;
@@ -1479,7 +1480,8 @@ For devices with smaller width like mobile phone
         flex-direction: column-reverse;
     }
     .about-img img{
-        width: 280px;
+        /* width: 280px; */
+        text-align: center;
         height:220px;
         padding: 5px;
         border-radius: 10%;
@@ -1933,7 +1935,8 @@ for tabs and large phones
         flex-direction: column-reverse;
     }
     .about-img img{
-        width: 100%;
+        /* width: 100%; */
+        text-align: center;
         height:380px;
         padding: 30px;
         border-radius: 40px;
@@ -2284,7 +2287,8 @@ for tabs and large phones
         width: 40%;
     }
     .about-img img{
-        width: 100%;
+        /* width: 100%; */
+        text-align: center;
         height:450px;
         padding: 30px;
         border-radius: 40px;
