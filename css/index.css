@@ -64,7 +64,7 @@ body {
 }
 #header {
   background: #171717;
-  height: 100vh;
+  height: 55rem;
   width: 100%;
   overflow: hidden;
   animation: scale 1.5s ease;
@@ -1364,7 +1364,7 @@ For devices with smaller width like mobile phone
 
 @media only screen and (max-width: 550px) {
   .header-content {
-    height: 90vh;
+    height: 80vh;
     width: 100%;
     float: left;
     display: flex;
