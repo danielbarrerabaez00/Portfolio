@@ -1404,6 +1404,10 @@ For devices with smaller width like mobile phone
     z-index: 2;
     text-align: center;
   }
+
+  .info-programacion {
+    text-align: left;
+  }
   #contact {
     display: none;
   }
@@ -1487,7 +1491,7 @@ For devices with smaller width like mobile phone
   .about-second-line {
     opacity: 0.8;
     font-size: 15px;
-    text-align: justify;
+    text-align: left;
   }
   .about-main {
     display: flex;
@@ -1869,6 +1873,9 @@ for tabs and large phones
     z-index: 2;
     text-align: center;
   }
+  .info-programacion {
+    text-align: left;
+  }
   .contact {
     display: none;
   }
@@ -1951,7 +1958,7 @@ for tabs and large phones
   .about-second-line {
     opacity: 0.8;
     font-size: 24px;
-    text-align: justify;
+    text-align: left;
   }
   .about-main {
     display: flex;
@@ -2574,6 +2581,9 @@ for tabs and large phones
     color: whitesmoke;
     font-family: poppins;
     font-size: 18px;
+  }
+  .info-programacion {
+    text-align: left;
   }
   form button {
     padding: 8px 24px;
