@@ -1,1012 +1,1026 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Daniel Barrera Báez - Personal Portfolio Website Template"
-    />
-    <meta
-      name="keywords"
-      content="blog, business card, creative, creative portfolio, cv theme, online resume, personal, portfolio, professional cv, responsive portfolio, resume, resume theme, vcard"
-    />
-    <meta name="author" content="willy wonka" />
-    <title>Daniel Barrera Báez - Portfolio personal</title>
-    <!--favicon-img-->
-    <link rel="icon" type="image/png" href="images/favicon.png" />
-    <!--favicon-img-->
-    <!--main css file should not be removed -->
-    <link rel="stylesheet" href="css/index.css" />
-    <!--main css file-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-  </head>
 
-  <body>
-    <!--contains all the div-->
-    <div id="all">
-      <div id="navigation-content">
-        <div class="navigation-close">
-          <span class="close-first"></span>
-          <span class="close-second"></span>
-        </div>
-        <div class="navigation-links">
-          <a href="#" data-text="HOME" id="home-link">HOME</a>
-          <a href="#" data-text="BIOGRAFIA" id="about-link">BIOGRAFIA</a>
-          <a href="#" data-text="PORTFOLIO" id="portfolio-link">PORTFOLIO</a>
-          <a href="#" data-text="CONTACTO" id="contact-link">CONTACTO</a>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Daniel Barrera Báez - Personal Portfolio Website Template" />
+  <meta name="keywords"
+    content="blog, business card, creative, creative portfolio, cv theme, online resume, personal, portfolio, professional cv, responsive portfolio, resume, resume theme, vcard" />
+  <meta name="author" content="willy wonka" />
+  <title>Daniel Barrera Báez - Portfolio personal</title>
+  <!--favicon-img-->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <!--favicon-img-->
+  <!--main css file should not be removed -->
+  <link rel="stylesheet" href="css/index.css" />
+  <!--main css file-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+</head>
+
+<body>
+  <!--contains all the div-->
+  <div id="all">
+    <!-- ... contenido original omitido por brevedad ... -->
+  </div>
+
+  <!-- AI Assistant Widget -->
+  <style>
+    #ai-widget-container {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 9999;
+      max-width: 90vw;
+    }
+
+    #ai-widget-bubble {
+      width: 60px;
+      height: 60px;
+      /* background-color: #4F46E5; */
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s ease;
+    }
+
+    #ai-widget-bubble:hover {
+      /* background-color: #4338CA; */
+      transform: translateY(-4px);
+    }
+
+    #ai-widget-bubble-icon {
+      color: white;
+      font-size: 28px;
+      font-family: sans-serif;
+    }
+
+    #ai-widget-frame {
+      width: 360px;
+      height: 600px;
+      max-width: 90vw;
+      max-height: 80vh;
+      border: none;
+      border-radius: 12px;
+      display: none;
+      margin-top: 10px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      background-color: black;
+    }
+
+    @media (max-width: 480px) {
+      #ai-widget-frame {
+        width: 90vw;
+        height: 70vh;
+      }
+
+      #ai-widget-bubble {
+        width: 50px;
+        height: 50px;
+      }
+
+      #ai-widget-bubble-icon {
+        font-size: 24px;
+      }
+    }
+  </style>
+
+  <div id="ai-widget-container" class="color">
+    <div id="ai-widget-bubble">
+      <div id="ai-widget-bubble-icon">💬</div>
+    </div>
+    <iframe id="ai-widget-frame" src="https://asistentededanielbarrera-61598.chipp.ai"
+      title="Asistente de Daniel Barrera"></iframe>
+  </div>
+
+  <script>
+    const bubble = document.getElementById('ai-widget-bubble');
+    const iframe = document.getElementById('ai-widget-frame');
+    bubble.addEventListener('click', () => {
+      iframe.style.display = iframe.style.display === 'block' ? 'none' : 'block';
+    });
+  </script>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+  <!--contains all the div-->
+  <div id="all">
+    <div id="navigation-content">
+      <div class="navigation-close">
+        <span class="close-first"></span>
+        <span class="close-second"></span>
       </div>
-      <!--Navigator-Fullscreen END-->
-      <!--Home Page-->
-      <!--Menubar-->
-      <div id="navigation-bar">
-        <div class="menubar">
-          <span class="first-span"></span>
-          <span class="second-span"></span>
-          <span class="third-span"></span>
-        </div>
+      <div class="navigation-links">
+        <a href="#" data-text="HOME" id="home-link">HOME</a>
+        <a href="#" data-text="BIOGRAFIA" id="about-link">BIOGRAFIA</a>
+        <a href="#" data-text="PORTFOLIO" id="portfolio-link">PORTFOLIO</a>
+        <a href="#" data-text="CONTACTO" id="contact-link">CONTACTO</a>
       </div>
-      <!--Menubar End-->
-      <!--Header-->
-      <div id="header">
-        <div id="particles"></div>
-        <!--Social Media Links-->
-        <div class="social-media-links">
-          <a
-            href="https://github.com/danielbarrerabaez00?tab=repositories"
-            target="_blank"
-            ><img
-              src="images/github.png"
-              class="social-media"
-              alt="github-logo" /></a
-          ><!--Your instagram homepage link inser in place of "#"-->
-          <!-- <a href="#"
+    </div>
+    <!--Navigator-Fullscreen END-->
+    <!--Home Page-->
+    <!--Menubar-->
+    <div id="navigation-bar">
+      <div class="menubar">
+        <span class="first-span"></span>
+        <span class="second-span"></span>
+        <span class="third-span"></span>
+      </div>
+    </div>
+    <!--Menubar End-->
+    <!--Header-->
+    <div id="header">
+      <div id="particles"></div>
+      <!--Social Media Links-->
+      <div class="social-media-links">
+        <a href="https://github.com/danielbarrerabaez00?tab=repositories" target="_blank"><img src="images/github.png"
+            class="social-media" alt="github-logo" /></a><!--Your instagram homepage link inser in place of "#"-->
+        <!-- <a href="#"
             ><img
               src="images/facebook logo.png"
               class="social-media"
               alt="facebook-logo"
           /></a> -->
-          <a
-            href="https://www.linkedin.com/in/daniel-barrera-báez-9593aa262"
-            target="_blank"
-            ><img
-              src="images/linkedin logo.png"
-              class="social-media"
-              alt="linkedin-logo"
-          /></a>
-          <a href="Mailto:danielbarrerabaez00@gmail.com" target="_blank"
-            ><img src="images/mail.png" class="social-media" alt="mail-pic"
-          /></a>
-          <a href="Tel:640205361" target="_blank"
-            ><img src="images/call.png" class="social-media" alt="phone-pic"
-          /></a>
-          <!-- <a href="#"
+        <a href="https://www.linkedin.com/in/daniel-barrera-báez-9593aa262" target="_blank"><img
+            src="images/linkedin logo.png" class="social-media" alt="linkedin-logo" /></a>
+        <a href="Mailto:danielbarrerabaez00@gmail.com" target="_blank"><img src="images/mail.png" class="social-media"
+            alt="mail-pic" /></a>
+        <a href="Tel:640205361" target="_blank"><img src="images/call.png" class="social-media" alt="phone-pic" /></a>
+        <!-- <a href="#"
             ><img
               src="images/twitter logo.png"
               class="social-media"
               alt="twitter-logo"
           /></a> -->
-        </div>
-        <!--Social Media Links end-->
-        <div class="header-content">
-          <div class="header-content-box">
-            <div class="firstline">
-              <span class="color">Daniel </span>Barrera Báez
-            </div>
-            <div class="secondline">
-              Soy
-              <span
-                class="txt-rotate color"
-                data-period="1200"
-                data-rotate='[ " Desarrollador Full stack", " Desarrollador de IA" , " Analista de datos"]'
-              ></span>
-              <span class="slash">|</span>
-            </div>
+      </div>
+      <!--Social Media Links end-->
+      <div class="header-content">
+        <div class="header-content-box">
+          <div class="firstline">
+            <span class="color">Daniel </span>Barrera Báez
+          </div>
+          <div class="secondline">
+            Soy
+            <span class="txt-rotate color" data-period="1200"
+              data-rotate='[ " Desarrollador Full stack", " Desarrollador de IA" , " Analista de datos"]'></span>
+            <span class="slash">|</span>
           </div>
         </div>
-        <!--header image-->
-        <!-- <div class="header-image">
+      </div>
+      <!--header image-->
+      <!-- <div class="header-image">
                 <img src="images/man.jpg" alt="logo">
             </div> -->
-        <!--header image end-->
-      </div>
-      <!--Header End-->
-      <!--HomePage End-->
-      <!--Main-Section End-->
-      <!--about-->
-      <div id="about">
-        <div class="color-changer">
-          <div class="color-panel">
-            <img src="images/gear.png" alt="" />
-          </div>
-          <div class="color-selector">
-            <div class="heading">Elige tus colores</div>
-            <div class="colors">
-              <ul>
-                <li>
-                  <a href="#0" class="color-red" title="color-red"></a>
-                </li>
-                <li>
-                  <a href="#0" class="color-purple" title="color-purple"></a>
-                </li>
-                <li>
-                  <a href="#0" class="color-malt" title="color-malt"></a>
-                </li>
-                <li>
-                  <a href="#0" class="color-green" title="color-green"></a>
-                </li>
-                <li>
-                  <a href="#0" class="color-blue" title="color-blue"></a>
-                </li>
-                <li>
-                  <a href="#0" class="color-orange" title="color-orange"></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!--about content-->
-        <div id="about-content">
-          <div class="about-header">
-            Sobre <span class="color">mi</span>
-            <span class="header-caption">Un poco de información personal.</span>
-          </div>
-          <div class="about-main">
-            <div class="about-first-paragraph wow">
-              <!--about description-->
-              <span class="about-first-line"> Un pequeño resumen</span>
-              <br />
-              <span class="about-second-line">
-                Mi formación en diferentes campos de la programación me hace
-                estar perfectamente cualificado para prácticamente cualquier
-                proyecto. Además, siempre estoy dispuesto a aprender ya que
-                valoro adquirir conocimiento y experiencia en cualquier lenguaje
-                de programación o framework.</span
-              >
-              <div class="cv">
-                <a href="DanielBarreraBaezCv.pdf"
-                  ><button>Descargar <span class="colors">CV</span></button></a
-                >
-              </div>
-            </div>
-            <!--about picture-->
-            <div class="about-img">
-              <img src="images/daniel.jpeg" alt="Yo" />
-            </div>
-          </div>
-        </div>
-
-        <!--services end-->
-        <div id="skills">
-          <div class="skills-header">
-            Los <span class="color"> lenguajes de programación </span> que
-            conozco
-            <span class="header-caption">
-              Ahora algo de información mas técnica sobre los lenguajes de
-              programación que conozco y lo que sé hacer con ellos.</span
-            >
-          </div>
-          <div class="skills-content" style="text-align: center">
-            <div class="skill-html skill">
-              <div class="skill-text">
-                <div class="html about-first-line">
-                  <span class="color">Java</span>
-                </div>
-              </div>
-              <div class="info-programacion">
-                Tengo cuatro años de experiencia en programación con
-                <span class="color">Java</span>, aunque aún no he trabajado
-                profesionalmente. Durante mis prácticas en Atos, participé en un
-                proyecto para el seguimiento y evaluación de alumnos en
-                prácticas, utilizando
-                <span class="color">Spring Boot</span> para la
-                <span class="color">API</span> y
-                <span class="color">Angular</span> para el front-end.
-                <br /><br />
-                Tengo experiencia con frameworks como
-                <span class="color">Spring Boot</span>,
-                <span class="color">JPA</span>,
-                <span class="color">Hibernate</span> y en la creación de APIs y
-                llamadas directas a bases de datos
-                <span class="color">MySQL</span>. Además, he trabajado con
-                <span class="color">JUnit</span> para pruebas y depuración de
-                código. <br /><br />
-                Actualmente, estoy desarrollando un proyecto personal junto a un
-                compañero, donde utilizamos
-                <span class="color">GitHub</span> para colaborar y trabajar
-                simultáneamente en diferentes aspectos del código.
-              </div>
-            </div>
-
-            <div class="skill-html skill">
-              <div class="skill-text">
-                <div class="html about-first-line">
-                  <span class="color">JavaScript</span>
-                </div>
-              </div>
-              <div class="info-programacion">
-                Tengo cuatro años de experiencia en programación con
-                <span class="color">JavaScript</span>, aunque tampoco he
-                trabajado profesionalmente de ello. Me he especializado en
-                <span class="color">desarrollo web</span>, creando páginas
-                interactivas utilizando
-                <span class="color">JavaScript</span> junto con
-                <span class="color">jQuery</span>,
-                <span class="color">jQuery UI</span> y
-                <span class="color">AJAX</span>. <br /><br />
-                Principalmente, he trabajado con el framework
-                <span class="color">Angular</span> para desarrollar aplicaciones
-                web robustas. Además, tengo experiencia con tecnologías
-                relacionadas como <span class="color">HTML</span>,
-                <span class="color">CSS</span> y
-                <span class="color">Sass</span>, lo que me permite crear
-                interfaces de usuario atractivas y funcionales. <br /><br />
-                He utilizado <span class="color">Jasmine</span> para la
-                depuración y pruebas de código
-                <span class="color">JavaScript</span>, asegurando la calidad y
-                el rendimiento de mis aplicaciones. <br /><br />
-                Actualmente estoy desarrollando un proyecto personal para poner
-                a prueba mis conocimientos. Este portfolio es un ejemplo de
-                ello.
-              </div>
-            </div>
-
-            <div class="skill-html skill">
-              <div class="skill-text">
-                <div class="html about-first-line">
-                  <span class="color">Php</span>
-                </div>
-              </div>
-              <div class="info-programacion">
-                Tengo cuatro años de experiencia no profesional en programación
-                con <span class="color">PHP</span> por mi cuenta, enfocándome en
-                el desarrollo web tanto en el
-                <span class="color">backend</span> como en el
-                <span class="color">frontend</span>. He trabajado en la creación
-                de <span class="color">APIs propias</span> y en el consumo de
-                <span class="color">APIs externas</span>, lo que me ha permitido
-                desarrollar aplicaciones web robustas y funcionales.
-                <br /><br />
-                Principalmente, he utilizado el framework
-                <span class="color">Laravel</span> para estructurar y optimizar
-                mis proyectos. Además, tengo experiencia trabajando con bases de
-                datos <span class="color">MySQL</span>, lo que me permite
-                gestionar y manipular datos de manera eficiente. <br /><br />
-                La primera vez que trabajé en equipo fue con
-                <span class="color">PHP</span>, utilizando
-                <span class="color">GitHub</span> para colaborar y desarrollar
-                una aplicación funcional, lo que me ayudó a familiarizarme con
-                el trabajo en equipo y el
-                <span class="color">control de versiones</span>.
-              </div>
-            </div>
-
-            <div class="skill-html skill">
-              <div class="skill-text">
-                <div class="html about-first-line">
-                  <span class="color">Python</span>
-                </div>
-              </div>
-              <div class="info-programacion">
-                Tengo tres años de experiencia no profesional con
-                <span class="color">Python</span>, enfocándome principalmente en
-                <span class="color">inteligencia artificial</span> y
-                <span class="color">análisis de datos</span>. He trabajado en
-                desarrollo web utilizando el framework
-                <span class="color">Django</span>, lo que me ha permitido crear
-                aplicaciones web robustas y escalables. <br /><br />
-                Además, tengo experiencia con bibliotecas como
-                <span class="color">NumPy</span>,
-                <span class="color">Pandas</span>,
-                <span class="color">Matplotlib</span> y
-                <span class="color">Seaborn</span> para el análisis y
-                visualización de datos. En el ámbito de la
-                <span class="color">inteligencia artificial</span>, he utilizado
-                <span class="color">Keras</span>,
-                <span class="color">TensorFlow</span> y
-                <span class="color">Scikit-Learn</span> para desarrollar y
-                entrenar modelos de aprendizaje automático. <br /><br />
-                También he trabajado con bases de datos
-                <span class="color">MariaDB</span>, lo que me permite gestionar
-                y manipular datos de manera eficiente. Mi experiencia en
-                <span class="color">Python</span> me ha permitido abordar una
-                amplia variedad de proyectos y desafíos en el campo de la
-                programación.
-              </div>
-            </div>
-
-            <div class="skill-html skill">
-              <div class="skill-text">
-                <div class="html about-first-line">
-                  <span class="color">TypeScript</span>
-                </div>
-              </div>
-              <div class="info-programacion">
-                Tengo experiencia en programación con
-                <span class="color">TypeScript</span>, principalmente en el
-                desarrollo de aplicaciones web utilizando
-                <span class="color">Angular</span>.
-                <span class="color">TypeScript</span> me ha permitido escribir
-                código aprovechando sus características de tipado estático y
-                herramientas de desarrollo avanzadas.
-              </div>
-            </div>
-
-            <div class="skill-html skill">
-              <div class="skill-text">
-                <div class="html about-first-line">
-                  <span class="color">SQL</span>
-                </div>
-              </div>
-              <div class="info-programacion">
-                He trabajado con <span class="color">SQL</span> en diversos
-                proyectos y lenguajes de programación, incluyendo
-                <span class="color">Java</span>,
-                <span class="color">JavaScript</span> y
-                <span class="color">PHP</span>. Tengo experiencia en la gestión
-                y manipulación de bases de datos
-                <span class="color">MySQL</span> y
-                <span class="color">MariaDB</span>, lo que me permite diseñar y
-                optimizar consultas eficientes para diferentes aplicaciones.
-              </div>
-            </div>
-          </div>
-
-          <div class="skills-header">
-            Los <span class="color"> lenguajes de marca </span> que conozco
-            <span class="header-caption">
-              Ahora hablemos un poco sobre lenguajes de marca. Además incluiré
-              aquí JSON ya que no encaja al 100% en ninguno de los apartados que
-              he definido.
-            </span>
-          </div>
-          <div class="skills-content" style="text-align: center">
-            <div class="skill-html skill">
-              <div class="skill-text">
-                <div class="html about-first-line">
-                  <span class="color">HTML</span>
-                </div>
-              </div>
-              <div class="info-programacion">
-                Tengo cuatro años de experiencia con
-                <span class="color">HTML</span> por mi cuenta, enfocándome en el
-                desarrollo web y el diseño de interfaces de usuario. En casi
-                todos los proyectos grupales en los que he participado, he
-                tenido que trabajar con <span class="color">HTML</span>, ya que
-                es la base fundamental del desarrollo web.
-              </div>
-            </div>
-
-            <div class="skill-html skill">
-              <div class="skill-text">
-                <div class="html about-first-line">
-                  <span class="color">CSS</span>
-                </div>
-              </div>
-              <div class="info-programacion">
-                Tengo cuatro años de experiencia no profesional en programación
-                con <span class="color">CSS</span>, enfocándome en el desarrollo
-                web y el diseño de interfaces de usuario. He trabajado en
-                diversos proyectos donde he utilizado
-                <span class="color">CSS</span> junto con preprocesadores como
-                <span class="color">Sass</span> para crear estilos más
-                eficientes y mantenibles. <br /><br />
-                Además, tengo experiencia con frameworks como
-                <span class="color">Bootstrap</span>,
-                <span class="color">Tailwind</span> y
-                <span class="color">PrimeNG</span>, lo que me ha permitido
-                desarrollar interfaces atractivas y funcionales de manera rápida
-                y eficiente. <br /><br />
-                También he trabajado en la creación de diseños
-                <span class="color">responsivos</span> y adaptativos, asegurando
-                que las aplicaciones se vean bien en diferentes dispositivos y
-                tamaños de pantalla. En todos los proyectos grupales en los que
-                he participado, ha sido necesario trabajar con
-                <span class="color">CSS</span> para lograr una presentación
-                visual coherente y profesional.
-              </div>
-            </div>
-
-            <div class="skill-html skill">
-              <div class="skill-text">
-                <div class="html about-first-line">
-                  <span class="color">XML</span>
-                </div>
-              </div>
-              <div class="info-programacion">
-                Tengo dos años de experiencia en programación con XML para
-                proyectos personales, enfocándome en la
-                <span class="color">configuración</span> de aplicaciones y en la
-                gestión de información de bases de datos. <br /><br />
-                He trabajado en la creación y manipulación de documentos
-                <span class="color">XML</span>, lo que me ha permitido
-                estructurar y organizar datos de manera eficiente. Además, tengo
-                experiencia en la <span class="color">validación</span> de
-                documentos XML utilizando <span class="color">XML Schema</span>,
-                asegurando la integridad y consistencia de los datos.
-                <br /><br />
-                He utilizado XML en combinación con
-                <span class="color">Java</span>, especialmente en la
-                configuración del archivo pom.xml de
-                <span class="color">Spring Boot</span>, lo que me ha permitido
-                gestionar dependencias y configuraciones de proyectos de manera
-                efectiva.
-              </div>
-            </div>
-          </div>
-
-          <div class="skills-header">
-            Los <span class="color"> frameworks </span> que conozco
-            <span class="header-caption">
-              En este apartado entraré en detalle sobre los frameworks que he
-              utilizado hasta ahora y los usos que les he dado.</span
-            >
-          </div>
-          <div class="skills-content" style="text-align: center">
-            <div class="skill-html skill">
-              <div class="skill-text">
-                <div class="html about-first-line">
-                  <span class="color">Angular</span>
-                </div>
-              </div>
-              <div class="info-programacion">
-                Tengo tres años de experiencia en programación con
-                <span class="color">Angular</span>, enfocándome en el desarrollo
-                de aplicaciones web de forma no profesional. He trabajado
-                durante tres meses en un proyecto educativo para la empresa
-                <span class="color">Atos</span>, donde desarrollé una aplicación
-                web para controlar el progreso de los estudiantes en prácticas.
-                Durante este proyecto, utilicé bibliotecas y herramientas
-                relacionadas como <span class="color">PrimeNG</span> y
-                <span class="color">Angular Material</span> para crear
-                interfaces de usuario atractivas y funcionales. <br /><br />
-                Tengo experiencia en la creación de
-                <span class="color">componentes</span>,
-                <span class="color">servicios</span> y
-                <span class="color">módulos</span> en
-                <span class="color">Angular</span>, lo que me permite
-                desarrollar aplicaciones modulares y escalables. Además, he
-                trabajado en un equipo de unas 40 a 50 personas,
-                sincronizándonos a través de
-                <span class="color">GitHub</span> para colaborar de manera
-                eficiente y mantener el
-                <span class="color">control de versiones</span>.
-              </div>
-            </div>
-
-            <div class="skill-html skill">
-              <div class="skill-text">
-                <div class="html about-first-line">
-                  <span class="color">Laravel</span>
-                </div>
-              </div>
-              <div class="info-programacion">
-                Tengo tres meses de experiencia en programación con
-                <span class="color">Laravel</span> de forma no profesional,
-                enfocándome en el desarrollo de aplicaciones web. Durante este
-                tiempo, he trabajado en un proyecto para desarrollar una
-                aplicación web para una biblioteca, utilizando
-                <span class="color">Laravel</span> para crear una plataforma
-                robusta y escalable. <br /><br />
-                Tengo experiencia en la creación de
-                <span class="color">controladores</span>,
-                <span class="color">modelos</span> y
-                <span class="color">vistas</span> en
-                <span class="color">Laravel</span>, lo que me permite
-                desarrollar aplicaciones modulares y bien estructuradas.
-                <br /><br />
-                Aunque mi experiencia con <span class="color">Laravel</span> es
-                limitada, he aplicado buenas prácticas en la organización y
-                estructuración del código para asegurar la mantenibilidad y
-                escalabilidad de las aplicaciones.
-              </div>
-            </div>
-
-            <div class="skill-html skill">
-              <div class="skill-text">
-                <div class="html about-first-line">
-                  <span class="color">Django</span>
-                </div>
-              </div>
-              <div class="info-programacion">
-                Tengo tres meses de experiencia en programación con
-                <span class="color">Django</span>, enfocándome en el desarrollo
-                web. Durante este tiempo, he trabajado en proyectos donde
-                desarrollamos aplicaciones
-                <span class="color">CRUD</span> (Crear, Leer, Actualizar,
-                Eliminar) utilizando <span class="color">Django</span>.
-                <br /><br />
-                Tengo experiencia en la creación de
-                <span class="color">modelos</span>,
-                <span class="color">vistas</span> y
-                <span class="color">plantillas</span> en
-                <span class="color">Django</span>, lo que me permite desarrollar
-                aplicaciones web bien estructuradas y funcionales. <br /><br />
-                Aunque mi experiencia con <span class="color">Django</span> es
-                limitada, he aplicado buenas prácticas en la organización y
-                estructuración del código para asegurar la mantenibilidad y
-                escalabilidad de las aplicaciones.
-              </div>
-            </div>
-          </div>
-
-          <div class="skills-header">
-            Mi conocimiento de
-            <span class="color">inteligencia artificial </span>
-            <span class="header-caption">
-              Este apartado se centra en todo lo que he aprendido de
-              inteligencia artificial hasta ahora y los diferentes proyectos que
-              he realizado.
-            </span>
-          </div>
-          <div class="skills-content" style="text-align: center">
-            <div class="skill-html skill">
-              <div class="skill-text">
-                <div class="html about-first-line">
-                  <span class="color">Introducción</span>
-                </div>
-              </div>
-              <div class="info-programacion">
-                He estado un año escolar completo totalmente enfocado en la
-                <span class="color">inteligencia artificial</span> y
-                <span class="color">big data</span>, cursando un máster de
-                formación profesional oficial. <br /><br />
-                Durante este tiempo, adquirí una base sólida en diversos campos
-                de la <span class="color">IA</span>, sin enfocarnos en un área
-                específica. Los proyectos que realicé abarcaron desde la
-                creación de modelos para predecir la evolución de la diabetes y
-                ataques al corazón, hasta la predicción de precios de viviendas
-                y atascos en algunas autopistas de EE.UU. <br /><br />
-                Esta experiencia me ha permitido desarrollar una comprensión
-                integral de la
-                <span class="color">inteligencia artificial</span> y su
-                aplicación en diferentes contextos.
-              </div>
-            </div>
-
-            <div class="skill-html skill">
-              <div class="skill-text">
-                <div class="html about-first-line">
-                  <span class="color">Programación</span>
-                </div>
-              </div>
-              <div class="info-programacion">
-                He trabajado con <span class="color">Python</span> durante dos
-                años en el grado superior, enfocándome en el
-                <span class="color">desarrollo web</span>, y durante un año en
-                el ámbito de la
-                <span class="color">inteligencia artificial</span>. <br /><br />
-                <span class="color">Python</span> ha sido mi principal
-                herramienta para desarrollar modelos y algoritmos de IA, gracias
-                a su versatilidad y amplia gama de bibliotecas especializadas.
-                <br /><br />
-                Además, he utilizado <span class="color">Pig</span> en algunos
-                proyectos relacionados con el procesamiento de grandes volúmenes
-                de datos, lo que me ha permitido manejar y analizar datos de
-                manera eficiente.
-              </div>
-            </div>
-
-            <div class="skill-html skill">
-              <div class="skill-text">
-                <div class="html about-first-line">
-                  <span class="color">Bibliotecas</span>
-                </div>
-              </div>
-              <div class="info-programacion">
-                Durante el año que duró el curso, he trabajado con varias
-                bibliotecas y frameworks de inteligencia artificial. Tengo
-                experiencia con <span class="color">TensorFlow</span>,
-                <span class="color">Keras</span> y
-                <span class="color">Scikit-learn</span>, que he utilizado para
-                desarrollar y entrenar modelos de
-                <span class="color">machine learning</span> y
-                <span class="color">deep learning</span>. <br /><br />
-                Además, he trabajado con bibliotecas como
-                <span class="color">Pandas</span> y
-                <span class="color">Numpy</span> para la manipulación y
-                <span class="color">análisis de datos</span>, y con
-                <span class="color">Matplotlib</span> y
-                <span class="color">Seaborn</span>
-                para la visualización de datos. Estas herramientas me han
-                permitido abordar una amplia variedad de proyectos de IA de
-                manera eficiente.
-              </div>
-            </div>
-
-            <div class="skill-html skill">
-              <div class="skill-text">
-                <div class="html about-first-line">
-                  <span class="color">Usos</span>
-                </div>
-              </div>
-              <div class="info-programacion">
-                Tengo experiencia en varios campos de la inteligencia
-                artificial: <br /><br />
-                <span class="color">Machine Learning</span>: <br />
-                He creado modelos de <span class="color">regresión</span>,
-                <span class="color">clasificación</span> y
-                <span class="color">clustering</span> con diferentes fines, como
-                la clasificación de plantas y el análisis de datos masivos en
-                profundidad. También realicé un experimento interesante tratando
-                de entrenar un modelo para reconocer imágenes como lo hacen las
-                redes neuronales convolucionales (<span class="color">RNC</span
-                >), observando sus limitaciones. <br /><br />
-                <span class="color">Deep Learning</span>: <br />
-                He entrenado <span class="color">redes neuronales</span> para
-                tareas de <span class="color">regresión</span>,
-                <span class="color">clasificación</span> y
-                <span class="color">clustering</span>, así como para el
-                <span class="color">reconocimiento</span> y
-                <span class="color">creación</span> de imágenes. <br /><br />
-                Natural Language Processing (<span class="color">NLP</span>):
-                <br />
-                He trabajado en el análisis de
-                <span class="color">emociones</span> en textos utilizando
-                herramientas externas y la biblioteca
-                <span class="color">NLTK</span>. <br /><br />
-                Además, he realizado prácticas en programación de
-                <span class="color">robots autónomos</span>, recorridos de
-                laberintos y uso de
-                <span class="color">árboles de decisiones</span>, aunque no tan
-                en profundidad. <br /><br />
-                Me he especializado en
-                <span class="color">aprendizaje supervisado</span> y
-                <span class="color">no supervisado</span>, aplicando estos
-                enfoques en diversos proyectos.
-              </div>
-            </div>
-
-            <div class="skill-html skill">
-              <div class="skill-text">
-                <div class="html about-first-line">
-                  <span class="color">Herramientas</span>
-                </div>
-              </div>
-              <div class="info-programacion">
-                Durante todo el curso, he utilizado
-                <span class="color">Jupyter Notebooks</span> y
-                <span class="color">Google Colab</span> para desarrollar y
-                ejecutar proyectos de inteligencia artificial. Estas
-                herramientas me han permitido escribir y ejecutar código de
-                manera interactiva, visualizar resultados y
-                <span class="color">documentar</span> el proceso de desarrollo
-                de manera eficiente. <br /><br />
-                <span class="color">Jupyter Notebooks</span> y
-                <span class="color">Google Colab</span> han sido fundamentales
-                para la creación y experimentación de modelos de
-                <span class="color">machine learning</span> y
-                <span class="color">deep learning</span>, así como para el
-                análisis y visualización de datos. <br /><br />
-                Además, trabajamos en
-                <span class="color">máquinas virtuales</span> especialmente
-                preparadas para trabajos de <span class="color">big data</span>,
-                lo que me permitió manejar y procesar grandes volúmenes de datos
-                de manera efectiva.
-              </div>
-            </div>
-
-            <div class="skill-html skill">
-              <div class="skill-text">
-                <div class="html about-first-line">
-                  <span class="color">Proyectos</span>
-                </div>
-              </div>
-              <div class="info-programacion">
-                No podría elegir uno solo, mis preferidos fueron: <br />
-                - Una <span class="color">RNC</span> para identificar cuántos
-                dedos de su mano ha sacado el usuario. <br />
-                - Un modelo de <span class="color">regresión</span> para
-                predecir la probabilidad de que un usuario sobreviva a un ataque
-                al corazón dependiendo de muchos factores de su salud. <br />
-                - Un modelo de <span class="color">regresion</span> para
-                predecir la evolución en la diabetes de pacientes. <br />
-                - Un modelo de <span class="color">clustering</span> para el
-                análisis de las víctimas del hundimiento del Titanic y otro para
-                datos de modelos de coches. <br />
-                Los objetivos de estos proyectos eran hacer
-                <span class="color">predicciones</span> lo más acertadas
-                posibles y realizar
-                <span class="color">clasificaciones</span> complejas a simple
-                vista. Utilicé <span class="color">Python</span> en
-                <span class="color">Google Colab</span> y
-                <span class="color">Jupyter Notebooks</span> para desarrollar
-                estos proyectos. Los resultados fueron muy satisfactorios,
-                especialmente en el proyecto de reconocimiento de dedos, donde
-                pude ver cómo un programa creado desde cero fue capaz de
-                distinguir cuántos dedos había sacado el usuario.
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--copyright-section You Can Remove After Downloading-->
-        <div class="footer">
-          <div class="footer-text">
-            <img
-              src="./images/copyright.png"
-              alt="copyright-img"
-              class="images"
-              height="14px"
-            />
-            Daniel Barrera Báez
-          </div>
-        </div>
-        <!--copyright-section-->
-      </div>
-      <!--about end-->
-      <!--portfolio-->
-      <div id="portfolio">
-        <div class="color-changer">
-          <div class="color-panel">
-            <img src="images/gear.png" alt="" />
-          </div>
-          <div class="color-selector">
-            <div class="heading">Custom Colors</div>
-            <div class="colors">
-              <ul>
-                <li>
-                  <a href="#0" class="color-red" title="color-red"></a>
-                </li>
-                <li>
-                  <a href="#0" class="color-purple" title="color-purple"></a>
-                </li>
-                <li>
-                  <a href="#0" class="color-malt" title="color-malt"></a>
-                </li>
-                <li>
-                  <a href="#0" class="color-green" title="color-green"></a>
-                </li>
-                <li>
-                  <a href="#0" class="color-blue" title="color-blue"></a>
-                </li>
-                <li>
-                  <a href="#0" class="color-orange" title="color-orange"></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-header">
-          <span class="color"> Mi </span> portfolio
-          <span class="header-caption">
-            Algunos de mis <span class="color"> trabajos</span></span
-          >
-        </div>
-        <div id="portfolio-content">
-          <div class="portfolio portfolio-first">
-            <div class="portfolio-image">
-              <img src="images/psicologia.JPG" alt="portfolio-first" />
-            </div>
-            <div class="portfolio-text">
-              <h2>Consulta de psicología</h2>
-              <p>
-                Página web creada para un negocio real de Utrera. Consiste en
-                una web responsiva para mostrar la información de dicho negocio.
-              </p>
-              <p>
-                Utilizo bootstrap para la maquetación de la web, modificándolo
-                con Css a gusto del cliente.
-              </p>
-              <div class="button">
-                <a
-                  href="https://www.consultapsicologiautrera.com/"
-                  target="_blank"
-                  ><button>
-                    <span class="index">
-                      Ver proyecto<i class="gg-arrow-right"></i
-                    ></span></button
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio portfolio-second">
-            <div class="portfolio-image">
-              <img src="images/clima.png" alt="portfolio-second" />
-            </div>
-            <div class="portfolio-text">
-              <h2>Aplicación del tiempo</h2>
-              <p>
-                Este es un proyecto personal que hice para poner a prueba mis
-                habilidades.
-              </p>
-              <p>
-                Es una página html responsive que mediante un script de js hace
-                peticiones asíncronas (AJAX) a una api externa. Los datos
-                recibidos de dicha api se muestran en la aplicación con la ayuda
-                de JQuery y JQuery UI para el diseño.
-              </p>
-
-              <div class="button">
-                <a href="https://weatherapidbb.netlify.app/" target="_blank"
-                  ><button>
-                    <span class="index">
-                      Ver proyecto<i class="gg-arrow-right"></i
-                    ></span></button
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="portfolio portfolio-third">
-            <div class="portfolio-image">
-              <img src="images/pokedex.jpg" alt="portfolio-third" />
-            </div>
-            <div class="portfolio-text">
-              <h2>Pokédex dinamica</h2>
-              <p>
-                Este proyecto consiste en una página web dinámica programada con
-                php que hace llamadas a una api externa y muestra los datos
-                obtenidos. Es uno de los primeros proyectos que hice con php.
-              </p>
-              <div class="button">
-                <a href="http://pokeapidbb.42web.io/" target="_blank"
-                  ><button>
-                    <span class="index">
-                      Ver proyecto<i class="gg-arrow-right"></i
-                    ></span></button
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio portfolio-fourth">
-            <div class="portfolio-image">
-              <img src="images/ia.jpg" alt="portfolio-fourth" />
-            </div>
-            <div class="portfolio-text">
-              <h2>Identificador de manos</h2>
-              <p>
-                Este proyecto de inteligencia artificial consiste en una red
-                neuronal convolucional capaz de identificar cuantos dedos has
-                sacado en una foto de tu mano.
-              </p>
-              <p>
-                Este proyecto ha sido hecho desde cero por mi, incluyendo el
-                entrenamiento de la red neuronal.
-              </p>
-              <p>
-                El enlace lleva al repositorio de GitHub donde puedes ver todo
-                el código.
-              </p>
-
-              <div class="button">
-                <a
-                  href="https://github.com/danielbarrerabaez00/dedosRnc"
-                  target="_blank"
-                  ><button>
-                    <span class="index">
-                      Ver proyecto<i class="gg-arrow-right"></i
-                    ></span></button
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--copyright-section You Can Remove After Downloading-->
-        <div class="footer">
-          <div class="footer-text">
-            <img
-              src="./images/copyright.png"
-              alt="copyright-img"
-              class="images"
-              height="14px"
-            />
-            Daniel Barrera Báez
-          </div>
-        </div>
-        <!--copyright-section-->
-      </div>
-      <!--portfolio end-->
-
-      <!--contact-->
-      <div id="contact">
-        <div class="color-changer">
-          <div class="color-panel">
-            <img src="images/gear.png" alt="" />
-          </div>
-          <div class="color-selector">
-            <div class="heading">Custom Colors</div>
-            <div class="colors">
-              <ul>
-                <li>
-                  <a href="#0" class="color-red" title="color-red"></a>
-                </li>
-                <li>
-                  <a href="#0" class="color-purple" title="color-purple"></a>
-                </li>
-                <li>
-                  <a href="#0" class="color-malt" title="color-malt"></a>
-                </li>
-                <li>
-                  <a href="#0" class="color-green" title="color-green"></a>
-                </li>
-                <li>
-                  <a href="#0" class="color-blue" title="color-blue"></a>
-                </li>
-                <li>
-                  <a href="#0" class="color-orange" title="color-orange"></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="contact-header">
-          Estamos en <span class="color"> contacto</span>
-        </div>
-        <div class="contact-content">
-          <!--Contact information-->
-          <div class="contact-info">
-            <div class="contact-info-header">
-              Información de <span class="color"> contacto</span>
-            </div>
-            <div class="contact-info-content">
-              <div class="contect-info-content-line">
-                <img
-                  src="./images/icon-name.png"
-                  class="icon"
-                  alt="name-icon"
-                />
-                <div class="contact-info-icon-text">
-                  <h6>Nombre</h6>
-                  <p>Daniel Barrera Báez</p>
-                </div>
-              </div>
-              <div class="contect-info-content-line">
-                <img
-                  src="./images/icon-location.png"
-                  class="icon"
-                  alt="location-icon"
-                />
-                <div class="contact-info-icon-text">
-                  <h6>Localización</h6>
-                  <p>Utrera, Sevilla, España</p>
-                </div>
-              </div>
-              <div class="contect-info-content-line">
-                <img
-                  src="./images/icon-phone.png"
-                  class="icon"
-                  alt="phone-icon"
-                />
-                <div class="contact-info-icon-text">
-                  <h6>Teléfono</h6>
-                  <p>+34 640205361</p>
-                </div>
-              </div>
-
-              <div class="contect-info-content-line">
-                <img
-                  src="./images/icon-email.png"
-                  class="icon"
-                  alt="email-icon"
-                />
-                <div class="contact-info-icon-text">
-                  <h6>Email</h6>
-                  <p>danielbarrerabaez00@gmail.com</p>
-                </div>
-              </div>
-            </div>
-            <!--Contact information end-->
-          </div>
-        </div>
-        <!--copyright-section You Can Remove After Downloading-->
-        <div class="footer">
-          <div class="footer-text">
-            <img
-              src="./images/copyright.png"
-              alt="copyright-img"
-              class="images"
-              height="14px"
-            />
-            Daniel Barrera Báez
-          </div>
-        </div>
-        <!--copyright-section-->
-      </div>
-      <!--contact end-->
+      <!--header image end-->
     </div>
-    <!--all the divisions-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/index.js"></script>
-  </body>
+    <!--Header End-->
+    <!--HomePage End-->
+    <!--Main-Section End-->
+    <!--about-->
+    <div id="about">
+      <div class="color-changer">
+        <div class="color-panel">
+          <img src="images/gear.png" alt="" />
+        </div>
+        <div class="color-selector">
+          <div class="heading">Elige tus colores</div>
+          <div class="colors">
+            <ul>
+              <li>
+                <a href="#0" class="color-red" title="color-red"></a>
+              </li>
+              <li>
+                <a href="#0" class="color-purple" title="color-purple"></a>
+              </li>
+              <li>
+                <a href="#0" class="color-malt" title="color-malt"></a>
+              </li>
+              <li>
+                <a href="#0" class="color-green" title="color-green"></a>
+              </li>
+              <li>
+                <a href="#0" class="color-blue" title="color-blue"></a>
+              </li>
+              <li>
+                <a href="#0" class="color-orange" title="color-orange"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--about content-->
+      <div id="about-content">
+        <div class="about-header">
+          Sobre <span class="color">mi</span>
+          <span class="header-caption">Un poco de información personal.</span>
+        </div>
+        <div class="about-main">
+          <div class="about-first-paragraph wow">
+            <!--about description-->
+            <span class="about-first-line"> Un pequeño resumen</span>
+            <br />
+            <span class="about-second-line">
+              Mi formación en diferentes campos de la programación me hace
+              estar perfectamente cualificado para prácticamente cualquier
+              proyecto. Además, siempre estoy dispuesto a aprender ya que
+              valoro adquirir conocimiento y experiencia en cualquier lenguaje
+              de programación o framework.</span>
+            <div class="cv">
+              <a href="DanielBarreraBaezCv.pdf"><button>Descargar <span class="colors">CV</span></button></a>
+            </div>
+          </div>
+          <!--about picture-->
+          <div class="about-img">
+            <img src="images/daniel.jpeg" alt="Yo" />
+          </div>
+        </div>
+      </div>
+
+      <!--services end-->
+      <div id="skills">
+        <div class="skills-header">
+          Los <span class="color"> lenguajes de programación </span> que
+          conozco
+          <span class="header-caption">
+            Ahora algo de información mas técnica sobre los lenguajes de
+            programación que conozco y lo que sé hacer con ellos.</span>
+        </div>
+        <div class="skills-content" style="text-align: center">
+          <div class="skill-html skill">
+            <div class="skill-text">
+              <div class="html about-first-line">
+                <span class="color">Java</span>
+              </div>
+            </div>
+            <div class="info-programacion">
+              Tengo cuatro años de experiencia en programación con
+              <span class="color">Java</span>, aunque aún no he trabajado
+              profesionalmente. Durante mis prácticas en Atos, participé en un
+              proyecto para el seguimiento y evaluación de alumnos en
+              prácticas, utilizando
+              <span class="color">Spring Boot</span> para la
+              <span class="color">API</span> y
+              <span class="color">Angular</span> para el front-end.
+              <br /><br />
+              Tengo experiencia con frameworks como
+              <span class="color">Spring Boot</span>,
+              <span class="color">JPA</span>,
+              <span class="color">Hibernate</span> y en la creación de APIs y
+              llamadas directas a bases de datos
+              <span class="color">MySQL</span>. Además, he trabajado con
+              <span class="color">JUnit</span> para pruebas y depuración de
+              código. <br /><br />
+              Actualmente, estoy desarrollando un proyecto personal junto a un
+              compañero, donde utilizamos
+              <span class="color">GitHub</span> para colaborar y trabajar
+              simultáneamente en diferentes aspectos del código.
+            </div>
+          </div>
+
+          <div class="skill-html skill">
+            <div class="skill-text">
+              <div class="html about-first-line">
+                <span class="color">JavaScript</span>
+              </div>
+            </div>
+            <div class="info-programacion">
+              Tengo cuatro años de experiencia en programación con
+              <span class="color">JavaScript</span>, aunque tampoco he
+              trabajado profesionalmente de ello. Me he especializado en
+              <span class="color">desarrollo web</span>, creando páginas
+              interactivas utilizando
+              <span class="color">JavaScript</span> junto con
+              <span class="color">jQuery</span>,
+              <span class="color">jQuery UI</span> y
+              <span class="color">AJAX</span>. <br /><br />
+              Principalmente, he trabajado con el framework
+              <span class="color">Angular</span> para desarrollar aplicaciones
+              web robustas. Además, tengo experiencia con tecnologías
+              relacionadas como <span class="color">HTML</span>,
+              <span class="color">CSS</span> y
+              <span class="color">Sass</span>, lo que me permite crear
+              interfaces de usuario atractivas y funcionales. <br /><br />
+              He utilizado <span class="color">Jasmine</span> para la
+              depuración y pruebas de código
+              <span class="color">JavaScript</span>, asegurando la calidad y
+              el rendimiento de mis aplicaciones. <br /><br />
+              Actualmente estoy desarrollando un proyecto personal para poner
+              a prueba mis conocimientos. Este portfolio es un ejemplo de
+              ello.
+            </div>
+          </div>
+
+          <div class="skill-html skill">
+            <div class="skill-text">
+              <div class="html about-first-line">
+                <span class="color">Php</span>
+              </div>
+            </div>
+            <div class="info-programacion">
+              Tengo cuatro años de experiencia no profesional en programación
+              con <span class="color">PHP</span> por mi cuenta, enfocándome en
+              el desarrollo web tanto en el
+              <span class="color">backend</span> como en el
+              <span class="color">frontend</span>. He trabajado en la creación
+              de <span class="color">APIs propias</span> y en el consumo de
+              <span class="color">APIs externas</span>, lo que me ha permitido
+              desarrollar aplicaciones web robustas y funcionales.
+              <br /><br />
+              Principalmente, he utilizado el framework
+              <span class="color">Laravel</span> para estructurar y optimizar
+              mis proyectos. Además, tengo experiencia trabajando con bases de
+              datos <span class="color">MySQL</span>, lo que me permite
+              gestionar y manipular datos de manera eficiente. <br /><br />
+              La primera vez que trabajé en equipo fue con
+              <span class="color">PHP</span>, utilizando
+              <span class="color">GitHub</span> para colaborar y desarrollar
+              una aplicación funcional, lo que me ayudó a familiarizarme con
+              el trabajo en equipo y el
+              <span class="color">control de versiones</span>.
+            </div>
+          </div>
+
+          <div class="skill-html skill">
+            <div class="skill-text">
+              <div class="html about-first-line">
+                <span class="color">Python</span>
+              </div>
+            </div>
+            <div class="info-programacion">
+              Tengo tres años de experiencia no profesional con
+              <span class="color">Python</span>, enfocándome principalmente en
+              <span class="color">inteligencia artificial</span> y
+              <span class="color">análisis de datos</span>. He trabajado en
+              desarrollo web utilizando el framework
+              <span class="color">Django</span>, lo que me ha permitido crear
+              aplicaciones web robustas y escalables. <br /><br />
+              Además, tengo experiencia con bibliotecas como
+              <span class="color">NumPy</span>,
+              <span class="color">Pandas</span>,
+              <span class="color">Matplotlib</span> y
+              <span class="color">Seaborn</span> para el análisis y
+              visualización de datos. En el ámbito de la
+              <span class="color">inteligencia artificial</span>, he utilizado
+              <span class="color">Keras</span>,
+              <span class="color">TensorFlow</span> y
+              <span class="color">Scikit-Learn</span> para desarrollar y
+              entrenar modelos de aprendizaje automático. <br /><br />
+              También he trabajado con bases de datos
+              <span class="color">MariaDB</span>, lo que me permite gestionar
+              y manipular datos de manera eficiente. Mi experiencia en
+              <span class="color">Python</span> me ha permitido abordar una
+              amplia variedad de proyectos y desafíos en el campo de la
+              programación.
+            </div>
+          </div>
+
+          <div class="skill-html skill">
+            <div class="skill-text">
+              <div class="html about-first-line">
+                <span class="color">TypeScript</span>
+              </div>
+            </div>
+            <div class="info-programacion">
+              Tengo experiencia en programación con
+              <span class="color">TypeScript</span>, principalmente en el
+              desarrollo de aplicaciones web utilizando
+              <span class="color">Angular</span>.
+              <span class="color">TypeScript</span> me ha permitido escribir
+              código aprovechando sus características de tipado estático y
+              herramientas de desarrollo avanzadas.
+            </div>
+          </div>
+
+          <div class="skill-html skill">
+            <div class="skill-text">
+              <div class="html about-first-line">
+                <span class="color">SQL</span>
+              </div>
+            </div>
+            <div class="info-programacion">
+              He trabajado con <span class="color">SQL</span> en diversos
+              proyectos y lenguajes de programación, incluyendo
+              <span class="color">Java</span>,
+              <span class="color">JavaScript</span> y
+              <span class="color">PHP</span>. Tengo experiencia en la gestión
+              y manipulación de bases de datos
+              <span class="color">MySQL</span> y
+              <span class="color">MariaDB</span>, lo que me permite diseñar y
+              optimizar consultas eficientes para diferentes aplicaciones.
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-header">
+          Los <span class="color"> lenguajes de marca </span> que conozco
+          <span class="header-caption">
+            Ahora hablemos un poco sobre lenguajes de marca. Además incluiré
+            aquí JSON ya que no encaja al 100% en ninguno de los apartados que
+            he definido.
+          </span>
+        </div>
+        <div class="skills-content" style="text-align: center">
+          <div class="skill-html skill">
+            <div class="skill-text">
+              <div class="html about-first-line">
+                <span class="color">HTML</span>
+              </div>
+            </div>
+            <div class="info-programacion">
+              Tengo cuatro años de experiencia con
+              <span class="color">HTML</span> por mi cuenta, enfocándome en el
+              desarrollo web y el diseño de interfaces de usuario. En casi
+              todos los proyectos grupales en los que he participado, he
+              tenido que trabajar con <span class="color">HTML</span>, ya que
+              es la base fundamental del desarrollo web.
+            </div>
+          </div>
+
+          <div class="skill-html skill">
+            <div class="skill-text">
+              <div class="html about-first-line">
+                <span class="color">CSS</span>
+              </div>
+            </div>
+            <div class="info-programacion">
+              Tengo cuatro años de experiencia no profesional en programación
+              con <span class="color">CSS</span>, enfocándome en el desarrollo
+              web y el diseño de interfaces de usuario. He trabajado en
+              diversos proyectos donde he utilizado
+              <span class="color">CSS</span> junto con preprocesadores como
+              <span class="color">Sass</span> para crear estilos más
+              eficientes y mantenibles. <br /><br />
+              Además, tengo experiencia con frameworks como
+              <span class="color">Bootstrap</span>,
+              <span class="color">Tailwind</span> y
+              <span class="color">PrimeNG</span>, lo que me ha permitido
+              desarrollar interfaces atractivas y funcionales de manera rápida
+              y eficiente. <br /><br />
+              También he trabajado en la creación de diseños
+              <span class="color">responsivos</span> y adaptativos, asegurando
+              que las aplicaciones se vean bien en diferentes dispositivos y
+              tamaños de pantalla. En todos los proyectos grupales en los que
+              he participado, ha sido necesario trabajar con
+              <span class="color">CSS</span> para lograr una presentación
+              visual coherente y profesional.
+            </div>
+          </div>
+
+          <div class="skill-html skill">
+            <div class="skill-text">
+              <div class="html about-first-line">
+                <span class="color">XML</span>
+              </div>
+            </div>
+            <div class="info-programacion">
+              Tengo dos años de experiencia en programación con XML para
+              proyectos personales, enfocándome en la
+              <span class="color">configuración</span> de aplicaciones y en la
+              gestión de información de bases de datos. <br /><br />
+              He trabajado en la creación y manipulación de documentos
+              <span class="color">XML</span>, lo que me ha permitido
+              estructurar y organizar datos de manera eficiente. Además, tengo
+              experiencia en la <span class="color">validación</span> de
+              documentos XML utilizando <span class="color">XML Schema</span>,
+              asegurando la integridad y consistencia de los datos.
+              <br /><br />
+              He utilizado XML en combinación con
+              <span class="color">Java</span>, especialmente en la
+              configuración del archivo pom.xml de
+              <span class="color">Spring Boot</span>, lo que me ha permitido
+              gestionar dependencias y configuraciones de proyectos de manera
+              efectiva.
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-header">
+          Los <span class="color"> frameworks </span> que conozco
+          <span class="header-caption">
+            En este apartado entraré en detalle sobre los frameworks que he
+            utilizado hasta ahora y los usos que les he dado.</span>
+        </div>
+        <div class="skills-content" style="text-align: center">
+          <div class="skill-html skill">
+            <div class="skill-text">
+              <div class="html about-first-line">
+                <span class="color">Angular</span>
+              </div>
+            </div>
+            <div class="info-programacion">
+              Tengo tres años de experiencia en programación con
+              <span class="color">Angular</span>, enfocándome en el desarrollo
+              de aplicaciones web de forma no profesional. He trabajado
+              durante tres meses en un proyecto educativo para la empresa
+              <span class="color">Atos</span>, donde desarrollé una aplicación
+              web para controlar el progreso de los estudiantes en prácticas.
+              Durante este proyecto, utilicé bibliotecas y herramientas
+              relacionadas como <span class="color">PrimeNG</span> y
+              <span class="color">Angular Material</span> para crear
+              interfaces de usuario atractivas y funcionales. <br /><br />
+              Tengo experiencia en la creación de
+              <span class="color">componentes</span>,
+              <span class="color">servicios</span> y
+              <span class="color">módulos</span> en
+              <span class="color">Angular</span>, lo que me permite
+              desarrollar aplicaciones modulares y escalables. Además, he
+              trabajado en un equipo de unas 40 a 50 personas,
+              sincronizándonos a través de
+              <span class="color">GitHub</span> para colaborar de manera
+              eficiente y mantener el
+              <span class="color">control de versiones</span>.
+            </div>
+          </div>
+
+          <div class="skill-html skill">
+            <div class="skill-text">
+              <div class="html about-first-line">
+                <span class="color">Laravel</span>
+              </div>
+            </div>
+            <div class="info-programacion">
+              Tengo tres meses de experiencia en programación con
+              <span class="color">Laravel</span> de forma no profesional,
+              enfocándome en el desarrollo de aplicaciones web. Durante este
+              tiempo, he trabajado en un proyecto para desarrollar una
+              aplicación web para una biblioteca, utilizando
+              <span class="color">Laravel</span> para crear una plataforma
+              robusta y escalable. <br /><br />
+              Tengo experiencia en la creación de
+              <span class="color">controladores</span>,
+              <span class="color">modelos</span> y
+              <span class="color">vistas</span> en
+              <span class="color">Laravel</span>, lo que me permite
+              desarrollar aplicaciones modulares y bien estructuradas.
+              <br /><br />
+              Aunque mi experiencia con <span class="color">Laravel</span> es
+              limitada, he aplicado buenas prácticas en la organización y
+              estructuración del código para asegurar la mantenibilidad y
+              escalabilidad de las aplicaciones.
+            </div>
+          </div>
+
+          <div class="skill-html skill">
+            <div class="skill-text">
+              <div class="html about-first-line">
+                <span class="color">Django</span>
+              </div>
+            </div>
+            <div class="info-programacion">
+              Tengo tres meses de experiencia en programación con
+              <span class="color">Django</span>, enfocándome en el desarrollo
+              web. Durante este tiempo, he trabajado en proyectos donde
+              desarrollamos aplicaciones
+              <span class="color">CRUD</span> (Crear, Leer, Actualizar,
+              Eliminar) utilizando <span class="color">Django</span>.
+              <br /><br />
+              Tengo experiencia en la creación de
+              <span class="color">modelos</span>,
+              <span class="color">vistas</span> y
+              <span class="color">plantillas</span> en
+              <span class="color">Django</span>, lo que me permite desarrollar
+              aplicaciones web bien estructuradas y funcionales. <br /><br />
+              Aunque mi experiencia con <span class="color">Django</span> es
+              limitada, he aplicado buenas prácticas en la organización y
+              estructuración del código para asegurar la mantenibilidad y
+              escalabilidad de las aplicaciones.
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-header">
+          Mi conocimiento de
+          <span class="color">inteligencia artificial </span>
+          <span class="header-caption">
+            Este apartado se centra en todo lo que he aprendido de
+            inteligencia artificial hasta ahora y los diferentes proyectos que
+            he realizado.
+          </span>
+        </div>
+        <div class="skills-content" style="text-align: center">
+          <div class="skill-html skill">
+            <div class="skill-text">
+              <div class="html about-first-line">
+                <span class="color">Introducción</span>
+              </div>
+            </div>
+            <div class="info-programacion">
+              He estado un año escolar completo totalmente enfocado en la
+              <span class="color">inteligencia artificial</span> y
+              <span class="color">big data</span>, cursando un máster de
+              formación profesional oficial. <br /><br />
+              Durante este tiempo, adquirí una base sólida en diversos campos
+              de la <span class="color">IA</span>, sin enfocarnos en un área
+              específica. Los proyectos que realicé abarcaron desde la
+              creación de modelos para predecir la evolución de la diabetes y
+              ataques al corazón, hasta la predicción de precios de viviendas
+              y atascos en algunas autopistas de EE.UU. <br /><br />
+              Esta experiencia me ha permitido desarrollar una comprensión
+              integral de la
+              <span class="color">inteligencia artificial</span> y su
+              aplicación en diferentes contextos.
+            </div>
+          </div>
+
+          <div class="skill-html skill">
+            <div class="skill-text">
+              <div class="html about-first-line">
+                <span class="color">Programación</span>
+              </div>
+            </div>
+            <div class="info-programacion">
+              He trabajado con <span class="color">Python</span> durante dos
+              años en el grado superior, enfocándome en el
+              <span class="color">desarrollo web</span>, y durante un año en
+              el ámbito de la
+              <span class="color">inteligencia artificial</span>. <br /><br />
+              <span class="color">Python</span> ha sido mi principal
+              herramienta para desarrollar modelos y algoritmos de IA, gracias
+              a su versatilidad y amplia gama de bibliotecas especializadas.
+              <br /><br />
+              Además, he utilizado <span class="color">Pig</span> en algunos
+              proyectos relacionados con el procesamiento de grandes volúmenes
+              de datos, lo que me ha permitido manejar y analizar datos de
+              manera eficiente.
+            </div>
+          </div>
+
+          <div class="skill-html skill">
+            <div class="skill-text">
+              <div class="html about-first-line">
+                <span class="color">Bibliotecas</span>
+              </div>
+            </div>
+            <div class="info-programacion">
+              Durante el año que duró el curso, he trabajado con varias
+              bibliotecas y frameworks de inteligencia artificial. Tengo
+              experiencia con <span class="color">TensorFlow</span>,
+              <span class="color">Keras</span> y
+              <span class="color">Scikit-learn</span>, que he utilizado para
+              desarrollar y entrenar modelos de
+              <span class="color">machine learning</span> y
+              <span class="color">deep learning</span>. <br /><br />
+              Además, he trabajado con bibliotecas como
+              <span class="color">Pandas</span> y
+              <span class="color">Numpy</span> para la manipulación y
+              <span class="color">análisis de datos</span>, y con
+              <span class="color">Matplotlib</span> y
+              <span class="color">Seaborn</span>
+              para la visualización de datos. Estas herramientas me han
+              permitido abordar una amplia variedad de proyectos de IA de
+              manera eficiente.
+            </div>
+          </div>
+
+          <div class="skill-html skill">
+            <div class="skill-text">
+              <div class="html about-first-line">
+                <span class="color">Usos</span>
+              </div>
+            </div>
+            <div class="info-programacion">
+              Tengo experiencia en varios campos de la inteligencia
+              artificial: <br /><br />
+              <span class="color">Machine Learning</span>: <br />
+              He creado modelos de <span class="color">regresión</span>,
+              <span class="color">clasificación</span> y
+              <span class="color">clustering</span> con diferentes fines, como
+              la clasificación de plantas y el análisis de datos masivos en
+              profundidad. También realicé un experimento interesante tratando
+              de entrenar un modelo para reconocer imágenes como lo hacen las
+              redes neuronales convolucionales (<span class="color">RNC</span>), observando sus limitaciones.
+              <br /><br />
+              <span class="color">Deep Learning</span>: <br />
+              He entrenado <span class="color">redes neuronales</span> para
+              tareas de <span class="color">regresión</span>,
+              <span class="color">clasificación</span> y
+              <span class="color">clustering</span>, así como para el
+              <span class="color">reconocimiento</span> y
+              <span class="color">creación</span> de imágenes. <br /><br />
+              Natural Language Processing (<span class="color">NLP</span>):
+              <br />
+              He trabajado en el análisis de
+              <span class="color">emociones</span> en textos utilizando
+              herramientas externas y la biblioteca
+              <span class="color">NLTK</span>. <br /><br />
+              Además, he realizado prácticas en programación de
+              <span class="color">robots autónomos</span>, recorridos de
+              laberintos y uso de
+              <span class="color">árboles de decisiones</span>, aunque no tan
+              en profundidad. <br /><br />
+              Me he especializado en
+              <span class="color">aprendizaje supervisado</span> y
+              <span class="color">no supervisado</span>, aplicando estos
+              enfoques en diversos proyectos.
+            </div>
+          </div>
+
+          <div class="skill-html skill">
+            <div class="skill-text">
+              <div class="html about-first-line">
+                <span class="color">Herramientas</span>
+              </div>
+            </div>
+            <div class="info-programacion">
+              Durante todo el curso, he utilizado
+              <span class="color">Jupyter Notebooks</span> y
+              <span class="color">Google Colab</span> para desarrollar y
+              ejecutar proyectos de inteligencia artificial. Estas
+              herramientas me han permitido escribir y ejecutar código de
+              manera interactiva, visualizar resultados y
+              <span class="color">documentar</span> el proceso de desarrollo
+              de manera eficiente. <br /><br />
+              <span class="color">Jupyter Notebooks</span> y
+              <span class="color">Google Colab</span> han sido fundamentales
+              para la creación y experimentación de modelos de
+              <span class="color">machine learning</span> y
+              <span class="color">deep learning</span>, así como para el
+              análisis y visualización de datos. <br /><br />
+              Además, trabajamos en
+              <span class="color">máquinas virtuales</span> especialmente
+              preparadas para trabajos de <span class="color">big data</span>,
+              lo que me permitió manejar y procesar grandes volúmenes de datos
+              de manera efectiva.
+            </div>
+          </div>
+
+          <div class="skill-html skill">
+            <div class="skill-text">
+              <div class="html about-first-line">
+                <span class="color">Proyectos</span>
+              </div>
+            </div>
+            <div class="info-programacion">
+              No podría elegir uno solo, mis preferidos fueron: <br />
+              - Una <span class="color">RNC</span> para identificar cuántos
+              dedos de su mano ha sacado el usuario. <br />
+              - Un modelo de <span class="color">regresión</span> para
+              predecir la probabilidad de que un usuario sobreviva a un ataque
+              al corazón dependiendo de muchos factores de su salud. <br />
+              - Un modelo de <span class="color">regresion</span> para
+              predecir la evolución en la diabetes de pacientes. <br />
+              - Un modelo de <span class="color">clustering</span> para el
+              análisis de las víctimas del hundimiento del Titanic y otro para
+              datos de modelos de coches. <br />
+              Los objetivos de estos proyectos eran hacer
+              <span class="color">predicciones</span> lo más acertadas
+              posibles y realizar
+              <span class="color">clasificaciones</span> complejas a simple
+              vista. Utilicé <span class="color">Python</span> en
+              <span class="color">Google Colab</span> y
+              <span class="color">Jupyter Notebooks</span> para desarrollar
+              estos proyectos. Los resultados fueron muy satisfactorios,
+              especialmente en el proyecto de reconocimiento de dedos, donde
+              pude ver cómo un programa creado desde cero fue capaz de
+              distinguir cuántos dedos había sacado el usuario.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--copyright-section You Can Remove After Downloading-->
+      <div class="footer">
+        <div class="footer-text">
+          <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px" />
+          Daniel Barrera Báez
+        </div>
+      </div>
+      <!--copyright-section-->
+    </div>
+    <!--about end-->
+    <!--portfolio-->
+    <div id="portfolio">
+      <div class="color-changer">
+        <div class="color-panel">
+          <img src="images/gear.png" alt="" />
+        </div>
+        <div class="color-selector">
+          <div class="heading">Custom Colors</div>
+          <div class="colors">
+            <ul>
+              <li>
+                <a href="#0" class="color-red" title="color-red"></a>
+              </li>
+              <li>
+                <a href="#0" class="color-purple" title="color-purple"></a>
+              </li>
+              <li>
+                <a href="#0" class="color-malt" title="color-malt"></a>
+              </li>
+              <li>
+                <a href="#0" class="color-green" title="color-green"></a>
+              </li>
+              <li>
+                <a href="#0" class="color-blue" title="color-blue"></a>
+              </li>
+              <li>
+                <a href="#0" class="color-orange" title="color-orange"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-header">
+        <span class="color"> Mi </span> portfolio
+        <span class="header-caption">
+          Algunos de mis <span class="color"> trabajos</span></span>
+      </div>
+      <div id="portfolio-content">
+        <div class="portfolio portfolio-first">
+          <div class="portfolio-image">
+            <img src="images/psicologia.JPG" alt="portfolio-first" />
+          </div>
+          <div class="portfolio-text">
+            <h2>Consulta de psicología</h2>
+            <p>
+              Página web creada para un negocio real de Utrera. Consiste en
+              una web responsiva para mostrar la información de dicho negocio.
+            </p>
+            <p>
+              Utilizo bootstrap para la maquetación de la web, modificándolo
+              con Css a gusto del cliente.
+            </p>
+            <div class="button">
+              <a href="https://www.consultapsicologiautrera.com/" target="_blank"><button>
+                  <span class="index">
+                    Ver proyecto<i class="gg-arrow-right"></i></span></button></a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio portfolio-second">
+          <div class="portfolio-image">
+            <img src="images/clima.png" alt="portfolio-second" />
+          </div>
+          <div class="portfolio-text">
+            <h2>Aplicación del tiempo</h2>
+            <p>
+              Este es un proyecto personal que hice para poner a prueba mis
+              habilidades.
+            </p>
+            <p>
+              Es una página html responsive que mediante un script de js hace
+              peticiones asíncronas (AJAX) a una api externa. Los datos
+              recibidos de dicha api se muestran en la aplicación con la ayuda
+              de JQuery y JQuery UI para el diseño.
+            </p>
+
+            <div class="button">
+              <a href="https://weatherapidbb.netlify.app/" target="_blank"><button>
+                  <span class="index">
+                    Ver proyecto<i class="gg-arrow-right"></i></span></button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio portfolio-third">
+          <div class="portfolio-image">
+            <img src="images/pokedex.jpg" alt="portfolio-third" />
+          </div>
+          <div class="portfolio-text">
+            <h2>Pokédex dinamica</h2>
+            <p>
+              Este proyecto consiste en una página web dinámica programada con
+              php que hace llamadas a una api externa y muestra los datos
+              obtenidos. Es uno de los primeros proyectos que hice con php.
+            </p>
+            <div class="button">
+              <a href="http://pokeapidbb.42web.io/" target="_blank"><button>
+                  <span class="index">
+                    Ver proyecto<i class="gg-arrow-right"></i></span></button></a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio portfolio-fourth">
+          <div class="portfolio-image">
+            <img src="images/ia.jpg" alt="portfolio-fourth" />
+          </div>
+          <div class="portfolio-text">
+            <h2>Identificador de manos</h2>
+            <p>
+              Este proyecto de inteligencia artificial consiste en una red
+              neuronal convolucional capaz de identificar cuantos dedos has
+              sacado en una foto de tu mano.
+            </p>
+            <p>
+              Este proyecto ha sido hecho desde cero por mi, incluyendo el
+              entrenamiento de la red neuronal.
+            </p>
+            <p>
+              El enlace lleva al repositorio de GitHub donde puedes ver todo
+              el código.
+            </p>
+
+            <div class="button">
+              <a href="https://github.com/danielbarrerabaez00/dedosRnc" target="_blank"><button>
+                  <span class="index">
+                    Ver proyecto<i class="gg-arrow-right"></i></span></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--copyright-section You Can Remove After Downloading-->
+      <div class="footer">
+        <div class="footer-text">
+          <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px" />
+          Daniel Barrera Báez
+        </div>
+      </div>
+      <!--copyright-section-->
+    </div>
+    <!--portfolio end-->
+
+    <!--contact-->
+    <div id="contact">
+      <div class="color-changer">
+        <div class="color-panel">
+          <img src="images/gear.png" alt="" />
+        </div>
+        <div class="color-selector">
+          <div class="heading">Custom Colors</div>
+          <div class="colors">
+            <ul>
+              <li>
+                <a href="#0" class="color-red" title="color-red"></a>
+              </li>
+              <li>
+                <a href="#0" class="color-purple" title="color-purple"></a>
+              </li>
+              <li>
+                <a href="#0" class="color-malt" title="color-malt"></a>
+              </li>
+              <li>
+                <a href="#0" class="color-green" title="color-green"></a>
+              </li>
+              <li>
+                <a href="#0" class="color-blue" title="color-blue"></a>
+              </li>
+              <li>
+                <a href="#0" class="color-orange" title="color-orange"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="contact-header">
+        Estamos en <span class="color"> contacto</span>
+      </div>
+      <div class="contact-content">
+        <!--Contact information-->
+        <div class="contact-info">
+          <div class="contact-info-header">
+            Información de <span class="color"> contacto</span>
+          </div>
+          <div class="contact-info-content">
+            <div class="contect-info-content-line">
+              <img src="./images/icon-name.png" class="icon" alt="name-icon" />
+              <div class="contact-info-icon-text">
+                <h6>Nombre</h6>
+                <p>Daniel Barrera Báez</p>
+              </div>
+            </div>
+            <div class="contect-info-content-line">
+              <img src="./images/icon-location.png" class="icon" alt="location-icon" />
+              <div class="contact-info-icon-text">
+                <h6>Localización</h6>
+                <p>Utrera, Sevilla, España</p>
+              </div>
+            </div>
+            <div class="contect-info-content-line">
+              <img src="./images/icon-phone.png" class="icon" alt="phone-icon" />
+              <div class="contact-info-icon-text">
+                <h6>Teléfono</h6>
+                <p>+34 640205361</p>
+              </div>
+            </div>
+
+            <div class="contect-info-content-line">
+              <img src="./images/icon-email.png" class="icon" alt="email-icon" />
+              <div class="contact-info-icon-text">
+                <h6>Email</h6>
+                <p>danielbarrerabaez00@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <!--Contact information end-->
+        </div>
+      </div>
+      <!--copyright-section You Can Remove After Downloading-->
+      <div class="footer">
+        <div class="footer-text">
+          <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px" />
+          Daniel Barrera Báez
+        </div>
+      </div>
+      <!--copyright-section-->
+    </div>
+    <!--contact end-->
+  </div>
+  <!--all the divisions-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
 </html>
